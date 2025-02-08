@@ -62,7 +62,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests'
-                bat 'dotnet test SeleniumIde.sln --logger "trx;LogFileName=testresults.trx"'
+                bat 'dotnet test SeleniumIde.sln --logger "trx;LogFileName=TestResults.trx"'
             }
         }
     }
