@@ -4,8 +4,8 @@ pipeline{
     environment {
         CHROME_VERSION = '133.0.6943.60'
         CHROMEDRIVER_VERSION = '133.0.6943.60'
-        CHROME_INSTALL_PATH = '"C:\\chrome-win64\\chrome.exe"'  // Use \\ to escape the backslash
-        CHROMEDRIVER_PATH = 'C:\\chromedriver\\chromedriver-win64\\chromedriver.exe'  // Escape backslashes
+        CHROME_INSTALL_PATH = 'C:\\applications\\chrome.exe'
+        CHROMEDRIVER_PATH = 'C:\\applications\\chromedriver.exe'
     }
     stages{
         stage('Checkout the code'){
