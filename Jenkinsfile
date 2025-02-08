@@ -56,7 +56,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project'
-                bat 'dotnet build SeleniumIde.cln --configuration Release'
+                bat 'dotnet build SeleniumIde.sln --configuration Release'
             }
         }
         stage('Test') {
